@@ -59,7 +59,7 @@ docker-compose up -d postgres
 ```
 
 2. Open the project in IntelliJ IDEA
-3. Run `StudTeacherApplication.java`
+3. Run `SpringBootProjectApplication.java`
 
 ### Running with Maven
 
@@ -189,7 +189,7 @@ After running the migrations, you can use these credentials:
 ## Project Structure
 
 ```
-src/main/java/com/example/stud_teacher/
+src/main/java/com/example/spring_boot_project/
 ├── config/              # Security and app configuration
 ├── controller/          # REST controllers
 ├── dto/                 # Data Transfer Objects

@@ -1,6 +1,6 @@
 spring:
   application:
-    name: stud_teacher
+    name: spring_boot_project
   
   docker:
     compose:
@@ -42,4 +42,4 @@ application:
 
 logging:
   level:
-    com.example.stud_teacher: DEBUG
+    com.example.spring_boot_project: DEBUG
