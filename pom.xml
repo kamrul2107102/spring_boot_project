@@ -9,9 +9,9 @@
 		<relativePath/>
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>stud_teacher</artifactId>
+	<artifactId>spring_boot_project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>stud_teacher</name>
+	<name>spring_boot_project</name>
 	<description>Student Teacher Management System</description>
 	
 	<properties>

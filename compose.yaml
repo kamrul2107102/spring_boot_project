@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: stud_teacher_app
+    container_name: spring_boot_project_app
     ports:
       - "8081:8080"
     environment:
@@ -18,12 +18,12 @@ services:
       postgres:
         condition: service_healthy
     networks:
-      - stud_teacher_network
+      - spring_boot_project_network
     restart: unless-stopped
 
   postgres:
     image: postgres:16-alpine
-    container_name: stud_teacher_db
+    container_name: spring_boot_project_db
     environment:
       - POSTGRES_DB=student_teacher_db
       - POSTGRES_USER=postgres
@@ -33,7 +33,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
-      - stud_teacher_network
+      - spring_boot_project_network
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres -d student_teacher_db"]
       interval: 10s
@@ -42,7 +42,7 @@ services:
     restart: unless-stopped
 
 networks:
-  stud_teacher_network:
+  spring_boot_project_network:
     driver: bridge
 
 volumes:
